@@ -1,3 +1,5 @@
 node() {
-    echo 'Your Pipeline works!'
+    stage('Checkout Repo') {
+        checkout scm
+    }
 }
